@@ -25,13 +25,17 @@ body {
     font-kerning: normal;
 }
 
+p{
+  font: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+}
 
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
