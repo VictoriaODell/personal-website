@@ -35,7 +35,7 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
-    font-family: "Roboto-Slab";
+    font-family: $serif-font-family;
     font-weight: 700;
 }
 
