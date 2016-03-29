@@ -1,6 +1,8 @@
 /**
  * Site header
  */
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900,900italic);
+
 .site-header {
     min-height: 56px;
 
@@ -167,6 +169,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    padding-top: 0px;
 }
 
 .page-heading {
@@ -237,4 +240,13 @@
             font-size: 18px;
         }
     }
+}
+
+
+.display{
+  font-family: "merriweather", fantasy;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 75px;
+  line-height: 1; 
 }
