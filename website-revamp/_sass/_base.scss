@@ -1,6 +1,8 @@
 /**
  * Reset some basic elements
  */
+
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -26,7 +28,7 @@ body {
 }
 
 p{
-  font: $base-font-family;
+  font-family: $base-font-family;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
 }
@@ -39,7 +41,7 @@ h1, h2, h3, h4, h5, h6, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
-    font-family: $serif-font-family;
+    font-family: $base-font-family;
     font-weight: 700;
 }
 
@@ -178,24 +180,39 @@ pre {
     }
 }
 
-
+/**
+ * --------------Index page
+ */
 .index-wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-
+.placeholder{
+    width: 250px;
+    height: 325px;
+    background-image: url(../img/itme.png);
+    background-size: cover;
+    margin-right: 50px;
+}
+.inline{
+  display: inline-block;
+}
+.top{
+  vertical-align: middle;
+}
+.center{
+  margin: 0 auto;
+  text-align: center;
+}
+.purple{
+  background-color: rgb(82,56,90);
+  color: white;
+}
+.white{
+  background-color: #F9F9F9;
+  color: #201e23;
+}
 
 /**
  * Clearfix
