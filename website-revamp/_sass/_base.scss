@@ -112,7 +112,20 @@ a {
     }
 }
 
+.index-special a {
+    color: $brand-color;
+    text-decoration: none;
 
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: none;
+        background-color: #e3bce8;
+    }
+}
 
 /**
  * Blockquotes
@@ -240,7 +253,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: white;
         }
     }
 }
