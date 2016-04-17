@@ -8,7 +8,6 @@
     <div class="index-wrapper purple center">
       <section class="wrapper">
               <div class="inline top">
-                <H2>My site is currently under construction
                 </H2>
               </div>
       </section>
@@ -19,47 +18,36 @@
 
       <div class="index-wrapper white">
         <section class="wrapper ">
-                <div class="placeholder inline top"></div>
                 <div class="inline top">
-                  <H2>Hey, I'm</H2>
-                  <H1><span class="display">Victoria</span></h1>
-                    <div class="index-special">
-                      <p>I believe in Community Empowerment & Design.
+                  <div class="display1">
+                    Hello.
                       <br>
-                      <a href="../blog.html">Check out my blog</a> while I hack on my site!
+                      My Name is Victoria.
+                   </div>
+                    <H1><span class="display">I'm trying to tell my story.</span></h1>
+                  </div>
+                    <div class="index-special">
+                      <p>
+                        I’m fickle and learning but moving forward.
+                        I believe in design and people.
+
+                        Currently, I'm a graphic designer at Continuum Analytics and a volunteer community organizer with Open Austin.
+                      <a href="../blog.html">Check out my blog</a> while I works on my site.
                     </p>
                     </div>
-                </div>
-        </section>
-      </div>
 
+                    <ul class="post-list">
+                      {% for post in site.posts %}
+                        <li>
+                          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-
-<!----      Under Contsruction
-
-<div class="index-wrapper">
-        <section class="wrapper">
-                <div>
-                  <ul>
-                    <li>Blog</li>
-                    <li>Work</li>
-                    <li>About </li>
-                  </ul>
-                </div>
-        </section>
-      </div>
-
-      <div class="index-wrapper">
-        <section class="wrapper">
-                <div>
-                </div>
-        </section>
-      </div>
--->
-
+                          <h2>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                          </h2>
+                        </li>
+                      {% endfor %}
+                    </ul>
+          </div>
+      </section>
   </body>
-
-
-
-
 </html>
