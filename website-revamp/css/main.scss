@@ -2,12 +2,12 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 // Our variables
-$base-font-family: "Roboto", Helvetica, Arial, sans-serif;
-$serif-font-family: "Roboto Slab", serif;
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$serif-font-family: "Open Sans", serif;
 $base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -16,7 +16,7 @@ $base-line-height: 25px;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: rgb(82,56,90);
+$background-color: #F9F9F9;
 $brand-color:      #52385a;
 
 $grey-color:       #828282;

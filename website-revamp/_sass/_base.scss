@@ -25,6 +25,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    line-height:  1.7;
 }
 
 p{
@@ -111,10 +112,16 @@ a {
         text-decoration: underline;
     }
 }
+.index-special{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F5BDC9;
+    margin-bottom: 50px;
+}
+
 
 .index-special a {
     color: $brand-color;
-    text-decoration: none;
+    border-bottom: 1px dotted #F5BDC9;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -123,7 +130,7 @@ a {
     &:hover {
         color: $text-color;
         text-decoration: none;
-        background-color: #e3bce8;
+        background-color: #F5BDC9;
     }
 }
 
@@ -198,8 +205,6 @@ pre {
  */
 .index-wrapper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 .placeholder{
     width: 250px;
@@ -219,7 +224,28 @@ pre {
   text-align: center;
 }
 .purple{
-  background-color: rgb(82,56,90);
+  background: linear-gradient(185deg, #df4f67, #69ddea);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:54% 0%}
+      50%{background-position:47% 100%}
+      100%{background-position:54% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:54% 0%}
+      50%{background-position:47% 100%}
+      100%{background-position:54% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:54% 0%}
+      50%{background-position:47% 100%}
+      100%{background-position:54% 0%}
+  }
   color: white;
 }
 .white{

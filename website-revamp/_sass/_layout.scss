@@ -33,7 +33,6 @@
     }
 
     .page-link {
-        color: white;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -171,7 +170,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    background-color: white;
+    background-color: #F9F9F9;
 }
 
 .page-heading {
@@ -244,12 +243,15 @@
     }
 }
 
-
+.display1{
+    font-size: 30px;
+    line-height: 2;
+}
 .display{
   font-family: "merriweather", fantasy;
   font-weight: 900;
   font-style: italic;
-  font-size: 75px;
+  font-size: 60px;
   line-height: 1;
-  color: #52385a;
+  color: #E698A9;
 }
