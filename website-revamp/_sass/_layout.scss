@@ -97,6 +97,13 @@
  * Site footer
  */
 .site-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+
 }
 
 .footer-heading {
@@ -112,14 +119,12 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: white;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
     padding-top: 30px;
 }
 
 .footer-col-wrapper a {
-    color: white;
 }
 .footer-col {
     float: left;
