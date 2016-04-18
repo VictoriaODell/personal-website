@@ -1,53 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    <div class="index-wrapper purple center">
-      <section class="wrapper">
-              <div class="inline top">
-                </H2>
-              </div>
-      </section>
-    </div>
-
-
+<head>
+    <title></title>
+</head>
+<body>
+    {% include head.html %}
+    {% include header.html %}
     <div class="page-content">
+        <div class="index-wrapper white">
+            <section class="wrapper">
 
-      <div class="index-wrapper white">
-        <section class="wrapper ">
                 <div class="inline top">
-                  <div class="display1">
-                    Hello.
-                      <br>
-                      My Name is Victoria.
-                   </div>
-                    <H1><span class="display">I'm trying to tell my story.</span></h1>
-                  </div>
-                    <div class="index-special">
-                      <p>
-                        I’m fickle and learning but moving forward.
-                        I believe in design and people.
-
-                        Currently, I'm a graphic designer at Continuum Analytics and a volunteer community organizer with Open Austin.
-                      <a href="../blog.html">Check out my blog</a> while I works on my site.
-                    </p>
+                    <div class="display1">
+                        Hello.<br>
+                        My Name is Victoria.
                     </div>
-
-                    <ul class="post-list">
-                      {% for post in site.posts %}
-                        <li>
-                          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-                          <h2>
-                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          </h2>
-                        </li>
-                      {% endfor %}
-                    </ul>
-          </div>
-      </section>
-  </body>
+                    <h1><span class="display">I'm trying to tell my
+                    story.</span></h1>
+                </div>
+                <div class="index-special">
+                    <p>I’m fickle and learning but moving forward. I believe in
+                    design and people. Currently, I'm a graphic designer at
+                    Continuum Analytics and a volunteer community organizer
+                    with Open Austin. <a href="../blog.html">Check out my
+                    blog</a> while I works on my site.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
 </html>

@@ -28,6 +28,14 @@ body {
     line-height:  1.7;
 }
 
+::-moz-selection {
+background-color: #a3d3e8;
+}
+
+::selection {
+background-color: #a3d3e8;
+}
+
 p{
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -100,17 +108,19 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
+  color: $brand-color;
+  text-decoration: none; 
+  border-bottom: 1px dotted #F5BDC9;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+  &:visited {
+      color: darken($brand-color, 15%);
+  }
 
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+  &:hover {
+      color: $text-color;
+      text-decoration: none;
+      background-color: #F5BDC9;
+  }
 }
 .index-special{
     padding-bottom: 20px;
@@ -279,7 +289,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: white;
+            fill: #D2D2D2;
         }
     }
 }
