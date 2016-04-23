@@ -214,6 +214,10 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    font-family: "Merriweather", Serif;
+    color: #E698A9;
+    font-style: italic;
+    font-weight: 900; 
 
     @include media-query($on-laptop) {
         font-size: 36px;
