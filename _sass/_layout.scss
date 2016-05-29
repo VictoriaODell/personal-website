@@ -200,7 +200,31 @@
     display: block;
     font-size: 24px;
 }
-
+/**
+ * Featured Post
+ */
+ .featured-post {
+   width: 100%;
+   outline: rgba(0, 0, 0, 0.06) solid 1px;
+   height: 350px;
+ }
+ .post-photo {
+  width: 50%;
+  height: 100%;
+  background-color: #E698A9;
+  display: inline-block;
+  color: white;
+  vertical-align: top;
+ }
+ .post-photo div {
+   text-align: center;
+   margin-top: 5px;
+ }
+.post-incerpt {
+  width: 49%;
+  display: inline-block;
+  margin-top: 35px
+}
 
 
 /**
@@ -217,7 +241,7 @@
     font-family: "Merriweather", Serif;
     color: #E698A9;
     font-style: italic;
-    font-weight: 900; 
+    font-weight: 900;
 
     @include media-query($on-laptop) {
         font-size: 36px;

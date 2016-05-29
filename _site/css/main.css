@@ -374,6 +374,31 @@ pre {
   font-size: 24px; }
 
 /**
+ * Featured Post
+ */
+.featured-post {
+  width: 100%;
+  outline: rgba(0, 0, 0, 0.06) solid 1px;
+  height: 350px; }
+
+.post-photo {
+  width: 50%;
+  height: 100%;
+  background-color: #E698A9;
+  display: inline-block;
+  color: white;
+  vertical-align: top; }
+
+.post-photo div {
+  text-align: center;
+  margin-top: 5px; }
+
+.post-incerpt {
+  width: 49%;
+  display: inline-block;
+  margin-top: 35px; }
+
+/**
  * Posts
  */
 .post-header {
