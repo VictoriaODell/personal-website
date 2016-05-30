@@ -1,8 +1,20 @@
-<ul>
-  {% for post in site.posts limit:1 %}
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt | truncatewords: 45 }}
-      <br>
-      <a href="{{ post.url }}"> Read More </a>
-  {% endfor %}
-</ul>
+<section class="featured-post">
+  <div class="post-photo">
+
+  </div>
+
+  <div class ="post-incerpt">
+    <span class="post-meta">Featured Posts</span>
+    <br>
+      {% for post in site.posts limit:1 %}
+          <a href="{{ post.url }}" class="feature-title">{{ post.title }}</a>
+          <br>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <br><br>
+          {{ post.excerpt | truncatewords: 30 }}
+          <br>
+          <a href="{{ post.url }}"> Read More </a>
+      {% endfor %}
+  </div>
+
+</section>

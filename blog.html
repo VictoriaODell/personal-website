@@ -6,8 +6,13 @@ permalink: /blog
 
 <h1 class="page-heading">Writings and ramblings from living and learning. I write about technology, design, and my everyday adventures.</h1>
 
+{% include post.html %}
+
+<div>
+
 <ul class="post-list">
   {% for post in site.posts %}
+
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -16,6 +21,13 @@ permalink: /blog
           {{ post.title }}
         </a>
       </h2>
+      {{ post.excerpt | truncatewords: 30 }}
+      <br>
+      <a href="{{ post.url }}"> Read More </a>
+
     </li>
+
   {% endfor %}
 </ul>
+
+</div>
