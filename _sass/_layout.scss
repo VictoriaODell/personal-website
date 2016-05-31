@@ -223,6 +223,9 @@ font-weight: 600;
 font-style: italic;
 }
  .post-photo {
+  background-image: url("../img/blogpost_images/diversity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 50%;
   height: 100%;
   background-color: #E698A9;
@@ -233,7 +236,15 @@ font-style: italic;
       width: 100%;
       height:250px;
   }
- }
+}
+  .header-img {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-position: bottom;
+
+  }
+
  .post-photo div {
    text-align: center;
    margin-top: 5px;
