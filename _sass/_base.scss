@@ -51,7 +51,6 @@ ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
     font-family: $base-font-family;
-    font-weight: 700;
 }
 
 
@@ -124,7 +123,7 @@ a {
 }
 .index-special{
     padding-bottom: 20px;
-
+    text-align:center;
     margin-bottom: 50px;
 }
 
@@ -228,35 +227,17 @@ pre {
 }
 .top{
   vertical-align: middle;
+  text-align: center;
+  width: 100%;
 }
 .center{
   margin: 0 auto;
   text-align: center;
 }
 .purple{
-  background: linear-gradient(185deg, #df4f67, #69ddea);
+  height: 15px;
+  background: #E698A9;
   background-size: 400% 400%;
-
-  -webkit-animation: AnimationName 3s ease infinite;
-  -moz-animation: AnimationName 3s ease infinite;
-  animation: AnimationName 3s ease infinite;
-
-  @-webkit-keyframes AnimationName {
-      0%{background-position:54% 0%}
-      50%{background-position:47% 100%}
-      100%{background-position:54% 0%}
-  }
-  @-moz-keyframes AnimationName {
-      0%{background-position:54% 0%}
-      50%{background-position:47% 100%}
-      100%{background-position:54% 0%}
-  }
-  @keyframes AnimationName {
-      0%{background-position:54% 0%}
-      50%{background-position:47% 100%}
-      100%{background-position:54% 0%}
-  }
-  color: white;
 }
 .white{
   background-color: white;

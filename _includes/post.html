@@ -10,8 +10,8 @@
           <a href="{{ post.url }}" class="feature-title">{{ post.title }}</a>
           <br>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <br><br>
-          {{ post.excerpt | truncatewords: 30 }}
+          <br>
+          {{ post.excerpt | truncatewords: 20 }}
           <br>
           <a href="{{ post.url }}"> Read More </a>
       {% endfor %}

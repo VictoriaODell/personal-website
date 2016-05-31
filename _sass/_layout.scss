@@ -201,6 +201,8 @@
 .post-link {
     display: block;
     font-size: 24px;
+    font-weight: 700;
+    font-family: "merriweather", serif;
 }
 /**
  * Featured Post
@@ -208,7 +210,7 @@
  .featured-post {
    width: 100%;
    outline: rgba(0,0,0,0.06) solid 1px;
-   height: 350px;
+   height: 375px;
    margin-bottom: 50px;
    @include media-query($on-tablet) {
        height: auto;
@@ -243,7 +245,7 @@ font-style: italic;
   margin-left: 15px;
   @include media-query($on-tablet) {
       width: 95%;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
   }
 }
 
@@ -301,6 +303,7 @@ font-style: italic;
 .display1{
     font-size: 30px;
     line-height: 2;
+    text-align: center;
 }
 .display{
   font-family: "merriweather", fantasy;
@@ -308,5 +311,6 @@ font-style: italic;
   font-style: italic;
   font-size: 60px;
   line-height: 1;
-  color: #E698A9;
+  color: #111;
+  text-decoration: none;;
 }
