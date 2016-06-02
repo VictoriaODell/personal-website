@@ -209,7 +209,6 @@
  */
  .featured-post {
    width: 100%;
-   outline: rgba(0,0,0,0.06) solid 1px;
    height: 375px;
    margin-bottom: 50px;
    @include media-query($on-tablet) {
@@ -252,7 +251,6 @@ font-style: italic;
 .post-incerpt {
   width: 45%;
   display: inline-block;
-  margin-top: 20px;
   margin-left: 15px;
   @include media-query($on-tablet) {
       width: 95%;

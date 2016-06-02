@@ -353,7 +353,6 @@ pre {
  */
 .featured-post {
   width: 100%;
-  outline: rgba(0, 0, 0, 0.06) solid 1px;
   height: 375px;
   margin-bottom: 50px; }
   @media screen and (max-width: 745px) {
@@ -394,7 +393,6 @@ pre {
 .post-incerpt {
   width: 45%;
   display: inline-block;
-  margin-top: 20px;
   margin-left: 15px; }
   @media screen and (max-width: 745px) {
     .post-incerpt {
