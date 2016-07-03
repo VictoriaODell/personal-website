@@ -1,20 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 /**
  * Reset some basic elements
  */
-@import url(https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900,900italic);
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
+.tk-futura-ptdelete-light {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 300; }
+
 /**
  * Basic styling
  */
 body {
-  font: 400 18px/25px "Open Sans", Helvetica, Arial, sans-serif;
+  font: 400 18px/25px "Futura", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: white;
   -webkit-text-size-adjust: 100%;
@@ -32,7 +34,7 @@ body {
   background-color: #a3d3e8; }
 
 p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Futura", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400; }
 
@@ -43,7 +45,7 @@ h1, h2, h3, h4, h5, h6, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  font-family: "Futura", Helvetica, Arial, sans-serif; }
 
 /**
  * Images
@@ -81,11 +83,9 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #DC99A7;
+  color: #ea4527;
   text-decoration: none;
   border-bottom: 1px dotted #F5BDC9; }
-  a:visited {
-    color: #c86076; }
   a:hover {
     color: #111;
     text-decoration: none;
@@ -97,10 +97,10 @@ a {
   margin-bottom: 50px; }
 
 .index-special a {
-  color: #DC99A7;
+  color: #ea4527;
   border-bottom: 1px dotted #F5BDC9; }
   .index-special a:visited {
-    color: #c86076; }
+    color: #b32a11; }
   .index-special a:hover {
     color: #111;
     text-decoration: none;
@@ -206,7 +206,7 @@ pre {
     fill: #D2D2D2; }
 
 /**
- * Site header
+ * ------------------------------Site header
  */
 .site-header {
   min-height: 56px;
@@ -219,12 +219,13 @@ pre {
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
-  .site-title, .site-title:visited {
-    color: white; }
 
 .site-nav {
+  line-height: 56px;
   float: right;
-  line-height: 56px; }
+  /**
+   * ------------------------------Mobile Menu
+   */ }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
@@ -267,14 +268,162 @@ pre {
           margin-right: 0; } }
 
 /**
- * Site footer
+ * ------------------------------Page content
+ */
+.page-content {
+  padding: 30px 0;
+  background-color: white; }
+
+.page-heading {
+  font-size: 20px; }
+
+.post-list {
+  margin-left: 0;
+  list-style: none; }
+  .post-list > li {
+    margin-bottom: 30px;
+    margin-top: 60px; }
+
+.post-meta {
+  font-size: 15.75px;
+  color: #828282; }
+
+.post-link {
+  display: block;
+  font-size: 24px;
+  font-weight: 700; }
+
+/**
+ * ------------------------------Featured Post
+ */
+.featured-post {
+  width: 100%;
+  height: 375px;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 745px) {
+    .featured-post {
+      height: auto; } }
+
+.feature-title {
+  font-family: Futura, sans-serif;
+  font-size: 36px;
+  font-weight: 600; }
+
+.post-photo {
+  background-image: url("../img/blogpost_images/diversity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  background-color: #E698A9;
+  display: inline-block;
+  color: white;
+  vertical-align: top; }
+  @media screen and (max-width: 745px) {
+    .post-photo {
+      width: 100%;
+      height: 250px; } }
+
+.header-img {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-position: bottom; }
+
+.post-photo div {
+  text-align: center;
+  margin-top: 5px; }
+
+.post-incerpt {
+  width: 45%;
+  display: inline-block;
+  margin-left: 15px; }
+  @media screen and (max-width: 745px) {
+    .post-incerpt {
+      width: 95%;
+      margin-bottom: 10px; } }
+
+/**
+ * ------------------------------Posts
+ */
+.post-header {
+  margin-bottom: 30px; }
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+  font-family: "Futura", Sans-serif;
+  font-weight: 900; }
+  @media screen and (max-width: 900px) {
+    .post-title {
+      font-size: 36px; } }
+
+.post-content {
+  margin-bottom: 30px; }
+  .post-content h2 {
+    font-size: 32px; }
+    @media screen and (max-width: 900px) {
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content h3 {
+    font-size: 26px; }
+    @media screen and (max-width: 900px) {
+      .post-content h3 {
+        font-size: 22px; } }
+  .post-content h4 {
+    font-size: 20px; }
+    @media screen and (max-width: 900px) {
+      .post-content h4 {
+        font-size: 18px; } }
+
+.display {
+  margin-top: 60px;
+  border-bottom: 1px solid black;
+  font-family: "Futura", sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 1;
+  color: #111;
+  text-decoration: none;
+  width: 80%;
+  padding-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto; }
+
+/**
+ * ------------------------------Work
+ */
+.work-photo {
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 49%;
+  height: 300px;
+  background-color: black;
+  display: inline-block;
+  color: white;
+  vertical-align: top; }
+  @media screen and (max-width: 745px) {
+    .work-photo {
+      width: 100%;
+      height: 250px; } }
+
+.featured-work {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px; }
+  @media screen and (max-width: 745px) {
+    .featured-work {
+      height: auto; } }
+
+.work-incerpt {
+  margin-top: 75px; }
+
+/**
+ * ------------------------------Site footer
  */
 .site-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
   background-color: #efefef; }
 
 .footer-heading {
@@ -322,133 +471,6 @@ pre {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
-/**
- * Page content
- */
-.page-content {
-  padding: 30px 0;
-  background-color: white; }
-
-.page-heading {
-  font-size: 20px; }
-
-.post-list {
-  margin-left: 0;
-  list-style: none; }
-  .post-list > li {
-    margin-bottom: 30px; }
-
-.post-meta {
-  font-size: 15.75px;
-  color: #828282; }
-
-.post-link {
-  display: block;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: "merriweather", serif; }
-
-/**
- * Featured Post
- */
-.featured-post {
-  width: 100%;
-  height: 375px;
-  margin-bottom: 50px; }
-  @media screen and (max-width: 745px) {
-    .featured-post {
-      height: auto; } }
-
-.feature-title {
-  font-family: merriweather;
-  font-size: 34px;
-  font-weight: 600;
-  font-style: italic; }
-
-.post-photo {
-  background-image: url("../img/blogpost_images/diversity.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 50%;
-  height: 100%;
-  background-color: #E698A9;
-  display: inline-block;
-  color: white;
-  vertical-align: top; }
-  @media screen and (max-width: 745px) {
-    .post-photo {
-      width: 100%;
-      height: 250px; } }
-
-.header-img {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 20px;
-  background-position: bottom; }
-
-.post-photo div {
-  text-align: center;
-  margin-top: 5px; }
-
-.post-incerpt {
-  width: 45%;
-  display: inline-block;
-  margin-left: 15px; }
-  @media screen and (max-width: 745px) {
-    .post-incerpt {
-      width: 95%;
-      margin-bottom: 10px; } }
-
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: 30px; }
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
-  font-family: "Merriweather", Serif;
-  color: #E698A9;
-  font-style: italic;
-  font-weight: 900; }
-  @media screen and (max-width: 900px) {
-    .post-title {
-      font-size: 36px; } }
-
-.post-content {
-  margin-bottom: 30px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 900px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 900px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 900px) {
-      .post-content h4 {
-        font-size: 18px; } }
-
-.display1 {
-  font-size: 30px;
-  line-height: 2;
-  text-align: center; }
-
-.display {
-  font-family: "merriweather", fantasy;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 60px;
-  line-height: 1;
-  color: #111;
-  text-decoration: none; }
-
 /**
  * Syntax highlighting styles
  */
