@@ -131,18 +131,17 @@
  }
 
 .feature-title{
-font-family: Futura, sans-serif;
 font-size: $base-font-size * 2;
 font-weight: 600;
 }
 
 .post-photo {
-  background-image: url("../img/blogpost_images/diversity.jpg");
+  background-image: url("../img/blogpost_images/color.gif");
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
   height: 100%;
-  background-color: #E698A9;
+  background-color: $brand-color;
   display: inline-block;
   color: white;
   vertical-align: top;
@@ -187,7 +186,6 @@ font-weight: 600;
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-    font-family: "Futura", Sans-serif;
     font-weight: 900;
 
     @include media-query($on-laptop) {
@@ -226,8 +224,7 @@ font-weight: 600;
 
 .display{
   margin-top: $spacing-unit * 2;
-  font-family: "Futura", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 80px;
   line-height: 1;
   color: #111;
@@ -269,7 +266,9 @@ font-weight: 600;
  }
 
  .work-incerpt{
-   margin-top:75px;
+   width: 70%;
+   margin: 0 auto;
+   margin-top: 10%;
  }
 
 

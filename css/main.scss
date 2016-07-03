@@ -2,13 +2,13 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import 'https://fonts.googleapis.com/css?family=Kanit:300,400,600,700';
 
 // Our variables
-$base-font-family: "Futura", Helvetica, Arial, sans-serif;
-$serif-font-family: "Open Sans", serif;
+$base-font-family: "Kanit", Helvetica, Arial, sans-serif;
+$serif-font-family: "Georgia";
 $base-font-size:   18px;
-$base-font-weight: 400;
+$base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 25px;
 
