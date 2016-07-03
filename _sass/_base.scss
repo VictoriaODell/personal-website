@@ -10,11 +10,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-.tk-futura-ptdelete-light{
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
 
 
 /**
@@ -114,12 +109,12 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
-  border-bottom: 1px dotted #F5BDC9;
+  border-bottom: 1px dotted $brand-color;
 
   &:hover {
       color: $text-color;
       text-decoration: none;
-      background-color: #F5BDC9;
+      background-color: $brand-color;
   }
 }
 .index-special{
@@ -131,7 +126,7 @@ a {
 
 .index-special a {
     color: $brand-color;
-    border-bottom: 1px dotted #F5BDC9;
+    border-bottom: 1px dotted $brand-color;
 
     &:visited {
         color: darken($brand-color, 15%);

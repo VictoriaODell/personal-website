@@ -7,11 +7,6 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
-.tk-futura-ptdelete-light {
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 300; }
-
 /**
  * Basic styling
  */
@@ -83,13 +78,13 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #ea4527;
+  color: #ff5252;
   text-decoration: none;
-  border-bottom: 1px dotted #F5BDC9; }
+  border-bottom: 1px dotted #ff5252; }
   a:hover {
     color: #111;
     text-decoration: none;
-    background-color: #F5BDC9; }
+    background-color: #ff5252; }
 
 .index-special {
   padding-bottom: 20px;
@@ -97,10 +92,10 @@ a {
   margin-bottom: 50px; }
 
 .index-special a {
-  color: #ea4527;
-  border-bottom: 1px dotted #F5BDC9; }
+  color: #ff5252;
+  border-bottom: 1px dotted #ff5252; }
   .index-special a:visited {
-    color: #b32a11; }
+    color: #ff0606; }
   .index-special a:hover {
     color: #111;
     text-decoration: none;
@@ -213,10 +208,8 @@ pre {
   position: relative; }
 
 .site-title {
-  font-size: 26px;
   font-weight: 300;
   line-height: 56px;
-  letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
 
@@ -310,7 +303,7 @@ pre {
   font-weight: 600; }
 
 .post-photo {
-  background-image: url("../img/blogpost_images/diversity.jpg");
+  background-image: url("../img/blogpost_images/color.gif");
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
@@ -379,7 +372,6 @@ pre {
 
 .display {
   margin-top: 60px;
-  border-bottom: 1px solid black;
   font-family: "Futura", sans-serif;
   font-weight: 900;
   font-size: 80px;
