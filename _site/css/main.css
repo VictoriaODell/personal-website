@@ -147,6 +147,7 @@ pre {
  * Wrapper
  */
 .wrapper {
+  height: 100%;
   max-width: -webkit-calc(900px - (30px * 2));
   max-width: calc(900px - (30px * 2));
   margin-right: auto;
@@ -164,7 +165,8 @@ pre {
  * --------------Index page
  */
 .index-wrapper {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 125px; }
 
 .placeholder {
   width: 250px;
@@ -189,16 +191,26 @@ pre {
   background-color: white;
   color: #201e23; }
 
+.float-right {
+  float: right; }
+
+.centered-button {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto; }
+
 .button {
   font-size: 15.75px;
-  float: right;
-  margin-top: 60px;
+  margin-top: 30px;
   padding: 10px;
   background-color: #ff5252;
   color: white !important;
   border-bottom: 5px solid #d63333; }
   .button:hover {
     background-color: #d63333; }
+  @media screen and (max-width: 600px) {
+    .button {
+      margin-top: 5px; } }
 
 /**
  * Clearfix
@@ -207,6 +219,9 @@ pre {
   content: "";
   display: table;
   clear: both; }
+
+.letter-spacing {
+  letter-spacing: -.7px; }
 
 /**
  * Icons
@@ -284,7 +299,9 @@ pre {
  */
 .page-content {
   padding: 30px 0;
-  background-color: white; }
+  padding-bottom: 0px;
+  background-color: white;
+  margin-bottom: 0px !important; }
 
 .page-heading {
   font-size: 20px; }
@@ -343,6 +360,24 @@ pre {
 
 .dask-header-img {
   background-image: url("../img/dask/dask_header.gif");
+  height: 250px;
+  width: 100%;
+  background-position: center; }
+
+.yil-header-img {
+  background-image: url("../img/yil/yil_header.jpg");
+  height: 250px;
+  width: 100%;
+  background-position: center; }
+
+.gyres-header-img {
+  background-image: url("../img/5gyres/5gyres_header.jpg");
+  height: 250px;
+  width: 100%;
+  background-position: center; }
+
+.openaustin-header-img {
+  background-image: url("../img/openaustin/openaustin_header.gif");
   height: 250px;
   width: 100%;
   background-position: center; }
@@ -410,7 +445,6 @@ pre {
   background-size: cover;
   width: 48%;
   height: 300px;
-  border: 3px solid black;
   display: inline-block;
   color: white;
   vertical-align: top; }
@@ -418,6 +452,18 @@ pre {
     .work-photo {
       width: 100%;
       height: 250px; } }
+
+.dask {
+  background-image: url("../img/dask/dask_sketches2.jpg"); }
+
+.gyres {
+  background-image: url("../img/5gyres/gyres.gif"); }
+
+.openaustin {
+  background-image: url("../img/openaustin/openaustin.jpg"); }
+
+.yogurtinlove {
+  background-image: url("../img/yil/yil_header.jpg"); }
 
 .featured-work {
   text-align: center;
@@ -428,9 +474,17 @@ pre {
       height: auto; } }
 
 .work-incerpt {
+  background-color: white;
+  padding: 15px;
   width: 70%;
   margin: 0 auto;
-  margin-top: 10%; }
+  margin-top: 9%; }
+  @media screen and (max-width: 745px) {
+    .work-incerpt {
+      margin-top: 3%; } }
+  @media screen and (max-width: 600px) {
+    .work-incerpt {
+      margin-top: 2%; } }
 
 .work-title {
   font-size: 42px;
@@ -482,7 +536,8 @@ pre {
     margin-bottom: 30px; }
   @media screen and (max-width: 745px) {
     .sidebar {
-      width: 90%; }
+      width: 90%;
+      margin-bottom: 60px; }
       .sidebar section {
         display: inline-block;
         width: 40%;
@@ -504,7 +559,11 @@ pre {
  * ------------------------------Site footer
  */
 .site-footer {
-  background-color: #efefef; }
+  display: inline-block;
+  background-color: #efefef;
+  width: 100%;
+  height: 200px;
+  margin-top: 60px; }
 
 .footer-heading {
   font-size: 18px;

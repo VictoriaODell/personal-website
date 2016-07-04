@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-</head>
 <body>
     {% include head.html %}
     {% include header.html %}
@@ -19,10 +16,54 @@
                       good design and good people.
                   </div>
 
-                  {% include post.html %}
+                <a href="/work.html"><div class="button centered-button"> View My Work </div></a>
 
+<!--
+                <section class="featured-work">
+
+                  <div class="work-photo dask">
+                  <div class ="work-incerpt ">
+
+                          <a href="work/dask.html" class="feature-title">Dask</a>
+                          <br>
+                          <span class="post-meta">Open Source logo for parallel computation with Python</span>
+                          <br>
+                          <a href="work/dask.html"> Read More </a>
+
+                    </div>
+                  </div>
+
+
+                  <div class ="post-incerpt">
+                    <span class="post-meta">Featured Posts</span>
+                    <br>
+                      {% for post in site.posts limit:1 %}
+                          <a href="{{ post.url }}" class="feature-title">{{ post.title }}</a>
+                          <br>
+                          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                          <br>
+                          {{ post.excerpt | truncatewords: 25 }}
+                          <br>
+                          <a href="{{ post.url }}"> Read More </a>
+                      {% endfor %}
+                  </div>
+-->
+
+                </section>
+
+
+<!--
+                  {% include post.html %}
+-->
               </section>
+
+
           </div>
+
+          {% include footer.html %}
+
       </div>
+
+
   </body>
 </html>
