@@ -97,10 +97,17 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
+h2{
+  font-weight: 600;
+}
 
+h3{
+  font-weight: 400;
+  margin-bottom: 0px;
+}
 
 
 /**
@@ -233,6 +240,20 @@ pre {
 .white{
   background-color: white;
   color: #201e23;
+}
+
+.button{
+  font-size: $small-font-size;
+  float:right;
+  margin-top: $spacing-unit *2;
+  padding: 10px;
+  background-color: #ff5252;
+  color: white !important;
+  border-bottom: 5px solid #d63333;
+
+    &:hover {
+      background-color: #d63333;
+    }
 }
 
 /**
