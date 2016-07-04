@@ -89,7 +89,9 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    padding-bottom: 0px;
     background-color: white;
+    margin-bottom: 0px !important;
 }
 
 .page-heading {
@@ -131,18 +133,17 @@
  }
 
 .feature-title{
-font-family: Futura, sans-serif;
 font-size: $base-font-size * 2;
 font-weight: 600;
 }
 
 .post-photo {
-  background-image: url("../img/blogpost_images/diversity.jpg");
+  background-image: url("../img/blogpost_images/color.gif");
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
   height: 100%;
-  background-color: #E698A9;
+  background-color: $brand-color;
   display: inline-block;
   color: white;
   vertical-align: top;
@@ -157,6 +158,33 @@ font-weight: 600;
     width: 100%;
     margin-bottom: 20px;
     background-position: bottom;
+}
+
+.dask-header-img {
+    background-image: url("../img/dask/dask_header.gif");
+    height: 250px;
+    width: 100%;
+    background-position: center;
+}
+
+.yil-header-img {
+    background-image: url("../img/yil/yil_header.jpg");
+    height: 250px;
+    width: 100%;
+    background-position: center;
+}
+
+.gyres-header-img {
+    background-image: url("../img/5gyres/5gyres_header.jpg");
+    height: 250px;
+    width: 100%;
+    background-position: center;
+}
+.openaustin-header-img {
+    background-image: url("../img/openaustin/openaustin_header.gif");
+    height: 250px;
+    width: 100%;
+    background-position: center;
 }
 
 .post-photo div {
@@ -180,14 +208,11 @@ font-weight: 600;
  * ------------------------------Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
 }
 
 .post-title {
     font-size: 42px;
-    letter-spacing: -1px;
     line-height: 1;
-    font-family: "Futura", Sans-serif;
     font-weight: 900;
 
     @include media-query($on-laptop) {
@@ -226,8 +251,7 @@ font-weight: 600;
 
 .display{
   margin-top: $spacing-unit * 2;
-  font-family: "Futura", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 80px;
   line-height: 1;
   color: #111;
@@ -247,17 +271,30 @@ font-weight: 600;
  margin-bottom: 5px;
  background-repeat: no-repeat;
  background-size: cover;
- width: 49%;
+ width: 48%;
  height: 300px;
- background-color: black;
  display: inline-block;
  color: white;
  vertical-align: top;
+
  @include media-query($on-tablet) {
      width: 100%;
      height:250px;
    }
  }
+
+ .dask{
+  background-image: url("../img/dask/dask_sketches2.jpg");
+ }
+ .gyres{
+   background-image: url("../img/5gyres/gyres.gif");
+ }
+.openaustin{
+  background-image: url("../img/openaustin/openaustin.jpg");
+}
+.yogurtinlove{
+  background-image: url("../img/yil/yil_header.jpg");
+}
 
 .featured-work {
    text-align: center;
@@ -269,16 +306,122 @@ font-weight: 600;
  }
 
  .work-incerpt{
-   margin-top:75px;
+   background-color: white;
+   padding: $spacing-unit /2;
+   width: 70%;
+   margin: 0 auto;
+   margin-top: 9%;
+   @include media-query($on-tablet) {
+       margin-top: 3%;
+   }
+   @include media-query($on-palm) {
+       margin-top: 2%;
+   }
  }
 
 
+ .work-title {
+     font-size: 42px;
+     line-height: 1;
+     font-weight: 900;
+     margin-bottom:0px;
+
+     @include media-query($on-laptop) {
+         font-size: 36px;
+     }
+ }
+
+.work-content {
+     margin-bottom: $spacing-unit;
+     width: 70%;
+     display: inline-block;
+     margin-top: 15px;
+     margin-right: $spacing-unit / 2;
+
+     @include media-query($on-tablet) {
+         width:100%;
+     }
+     @include media-query($on-palm) {
+         width:100%;
+     }
+
+     h2 {
+         font-size: 32px;
+         margin-top: $spacing-unit *1.25;
+         margin-bottom:0px;
+
+         @include media-query($on-laptop) {
+             font-size: 28px;
+         }
+     }
+
+     h3 {
+         font-size: 26px;
+
+         @include media-query($on-laptop) {
+             font-size: 22px;
+         }
+     }
+
+     h4 {
+         font-size: 20px;
+
+         @include media-query($on-laptop) {
+             font-size: 18px;
+         }
+     }
+}
+
+.sidebar{
+  font-size: $small-font-size;
+  background-color: #fbfbfb;
+  padding: 15px;
+  width: 22%;
+  display: inline-block;
+  vertical-align: top;
+
+  section{
+  margin-bottom: $spacing-unit;
+  }
+  @include media-query($on-tablet) {
+      width: 90%;
+      margin-bottom: $spacing-unit*2;
+
+      section{
+      display: inline-block;
+      width: 40%;
+      vertical-align: top;
+      width: 15%;
+      margin-right: 50px;
+  }
+  @include media-query($on-palm) {
+      width: 90%;
+
+      section{
+        width: 40%;
+        margin-right: $spacing-unit;
+      }
+
+  }
+
+  p{
+    font-size: $small-font-size;
+    margin-bottom: 15px;
+  }
+
+}
+
+}
 
  /**
   * ------------------------------Site footer
   */
  .site-footer {
+   display: inline-block;
    background-color: #efefef;
+   width: 100%;
+   height: 200px;
+   margin-top: $spacing-unit *2;
  }
 
  .footer-heading {
