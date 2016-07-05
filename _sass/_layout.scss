@@ -119,6 +119,13 @@
     font-weight: 700;
   }
 
+.blog-exerpt-link {
+      display: block;
+      font-size: $base-font-size;
+      font-weight: 400;
+  }
+
+
 
 /**
  * ------------------------------Featured Post
@@ -349,6 +356,7 @@ font-weight: 600;
          font-size: 32px;
          margin-top: $spacing-unit *1.25;
          margin-bottom:0px;
+         color: #111;
 
          @include media-query($on-laptop) {
              font-size: 28px;
@@ -391,14 +399,13 @@ font-weight: 600;
       display: inline-block;
       width: 40%;
       vertical-align: top;
-      width: 15%;
       margin-right: 50px;
   }
   @include media-query($on-palm) {
       width: 90%;
 
       section{
-        width: 40%;
+        width: 90%;
         margin-right: $spacing-unit;
       }
 

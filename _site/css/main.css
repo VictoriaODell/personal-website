@@ -322,6 +322,11 @@ pre {
   font-size: 24px;
   font-weight: 700; }
 
+.blog-exerpt-link {
+  display: block;
+  font-size: 18px;
+  font-weight: 400; }
+
 /**
  * ------------------------------Featured Post
  */
@@ -510,7 +515,8 @@ pre {
   .work-content h2 {
     font-size: 32px;
     margin-top: 37.5px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    color: #111; }
     @media screen and (max-width: 900px) {
       .work-content h2 {
         font-size: 28px; } }
@@ -542,13 +548,12 @@ pre {
         display: inline-block;
         width: 40%;
         vertical-align: top;
-        width: 15%;
         margin-right: 50px; } }
   @media screen and (max-width: 745px) and (max-width: 600px) {
     .sidebar {
       width: 90%; }
       .sidebar section {
-        width: 40%;
+        width: 90%;
         margin-right: 30px; } }
   @media screen and (max-width: 745px) {
       .sidebar p {
